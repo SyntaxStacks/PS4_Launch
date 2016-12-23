@@ -5,12 +5,12 @@ launch application from CLI to PS4 Test Kit
 ## Prerequisites
 
 #### Configure Windows OS
-0. Install VirtualBox
-1. Install Windows as a guest VM
-2. Ensure that your Windows User Account is password protected
+1. Install VirtualBox
+2. Install Windows as a guest VM
+3. Ensure that your Windows User Account is password protected
 > Windows → Control Panel → User Accounts → User Accounts → Manage Accounts
 
-3. Install PS4 dependencies
+4. Install PS4 dependencies
 
 #### Set Environment Variables in OSX
 Add the following to `~/.bashrc`
