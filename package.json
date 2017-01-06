@@ -1,0 +1,19 @@
+{
+  "name": "ps4-launch",
+  "version": "1.0.0",
+  "description": "PS4 Launch Util",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyntaxStacks/PS4_Launch.git"
+  },
+  "author": "John Lozano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SyntaxStacks/PS4_Launch/issues"
+  },
+  "homepage": "https://github.com/SyntaxStacks/PS4_Launch#readme"
+}
