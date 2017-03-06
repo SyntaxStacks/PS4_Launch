@@ -4,18 +4,36 @@ launch application from CLI to PS4 Test Kit
 
 ## Prerequisites
 
-1. VirtualBox needs to be installed and Windows Guest VM with PS4 dependencies needs to be created
-2. Export guest vm username and password
+#### Configure Windows OS
+1. Install VirtualBox
+2. Install Windows as a guest VM
+3. Ensure that your Windows User Account is password protected
+> Windows → Control Panel → User Accounts → User Accounts → Manage Accounts
+
+4. Install PS4 dependencies
+
+#### Set Environment Variables in OSX
+Add the following to `~/.bashrc`
 
 ```sh
+# Guest VM username
 export PS4_LAUNCH_USER=<username>
+
+# Guest VM password
 export PS4_LAUNCH_PASS=<password>
+
+# optional:
+export PS4_LAUNCH_PATH=\\VBOXSVR\code\Trilithium-PS4-SDK-2.10-344524\Samples\flickr\lithium_ps4.self
 ```
 
 # Usage
 The following command will launch the application passed as the first argument to the PS4.
+
 On a UNIX based system, be sure to use `\\` for the path separator.
 
 ```sh
 ./ps4_launch \\path\\to\\.self\\file\\on\\windows\\vm
+
+# if the optional PS4_LAUNCH_PATH is configured:
+./ps4_launch $PS4_LAUNCH_PATH
 ```
